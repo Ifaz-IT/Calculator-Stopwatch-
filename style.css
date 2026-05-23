@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Calculator */
+.calculator,
+.stopwatch {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.calculator h2,
+.stopwatch h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+}
+
+.buttons button,
+.stopwatch-buttons button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #000000;
+    color: white;
+    transition: 0.3s;
+}
+
+.buttons button:hover,
+.stopwatch-buttons button:hover {
+    background: #007bff;
+}
+
+.equal {
+    grid-column: span 2;
+    background: #28a745 !important;
+}
+
+.equal:hover {
+    background: #1e7e34 !important;
+}
+
+/* Stopwatch */
+#time {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.stopwatch-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
